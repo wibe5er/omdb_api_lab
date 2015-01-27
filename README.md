@@ -1,16 +1,16 @@
 OMDB Lab
 ========
 
+The Open Movie Database (OMDB) allows you to search for movies and
+find out details about them. We going to create a movie search tool
+that relies on OMDB's API.
+
 In this lab we're going to make use of this week's
 [jQuery](http://jquery.com/) lessons. The main objective will be to
 search the [OMDB API](http://www.omdbapi.com/) using jQuery's AJAX
 methods. A secondary objective will be to reinfornce our use of jQuery
 to interact with the DOM (e.g., selecting HTML elements, adding event
 listeners, and rendering new elements to the page).
-
-The Open Movie Database (OMDB) allows you to search for movies and
-find out details about them. We going to create a movie search tool
-that relies on OMDB's API.
 
 Part 1
 ------
