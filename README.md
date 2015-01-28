@@ -55,6 +55,8 @@ titles to the screen.
     * A good strategy might be to have a container (e.g., a `<div>` or
     `<ul>` in your HTML file that will hold the search results.
     * You may want to clear any old results before rendering new ones.
+8. If your search response does not return any results, make sure to let the user know that nothing was found! 
+    * Need a search term? Why not 'zealoushacker'
 
 Part 2: Bonus
 -------------
