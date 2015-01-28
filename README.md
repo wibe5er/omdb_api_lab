@@ -47,6 +47,7 @@ search term.
       use its API.
     * Use one of jQuery's AJAX methods: `$.ajax()`, `$.get()`, or `$.getJSON()`.
     * You don't need to sign up for an API key, unless you want to.
+    * Try using the 's' parameter to return multiple results.
 7. When the list of matching movies is returned, render the movie
 titles to the screen.
     * Use jQuery to construct new DOM elements for the titles and add
