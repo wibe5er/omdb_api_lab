@@ -1,4 +1,5 @@
 // Quetions: how to make it clean after a search
+// it all starts at bottom
 
 function getMovieTitle (title) {
 
@@ -11,11 +12,39 @@ function getMovieTitle (title) {
 
 		for (var i = 0; i < data.Search.length; i++) {
 			console.log(data.Search[i].Title);
-			var listMovies = $("<li>" + (data.Search[i].Title) + "</li>");
+			var listMovies = $("<li> <span>" + (data.Search[i].Title) + "</span> <button>get poster</button>" + "</li>");
+
+		//	var listMovies = $("<li>" + "<a href='" + url + "'>" + (data.Search[i].Title) + "</a>" + "</li>");
+
 			$("ul").append(listMovies);
-	
+			
 		}
+		pushPoster(title);
 	}); 
+
+	function pushPoster (title) {
+
+		$("body").on("click", "button", function (e) {
+		e.preventDefault();
+		var exactMovie = $(this).prev().text();
+		console.log("we will grab" + exactMovie);
+		
+		$.getJSON("http://www.omdbapi.com/?r=json&t=" + exactMovie, function (data) {
+				console.log(data.Poster);
+				var moviePoster = $("<img>").attr("src", data.Poster);
+				$("body").append(moviePoster);
+				
+
+		}) ;
+
+
+	});
+
+
+		
+	}
+
+//closes movieTitle function:
 }
 
 
